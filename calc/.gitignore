@@ -1,0 +1,18 @@
+Django is fast
+components available are more
+security
+
+
+Django setup
+install python
+pip --version
+pip install virtualenvwrapper-win (Install the enviorment)
+make new folder
+open cmd in that path
+py -m venv (any name of virtual env)
+then open virtual enviorment
+and activate scripts
+my_virenv\Scripts\activate
+pip install Django
+django-admin version
+django-admin startproject (project name)

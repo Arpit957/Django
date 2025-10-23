@@ -1,0 +1,21 @@
+<h1>Login Now</h1>
+
+<style>
+    h3{
+        color:red;
+    }
+</style>
+{%for message in messages%}
+  <h3>  <div>{{message}}</div> </h3>
+{%endfor%}
+
+<form method="post">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+    
+    <input type="submit" value="Login">
+</form>

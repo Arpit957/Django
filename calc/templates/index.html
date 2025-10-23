@@ -93,7 +93,11 @@
       <div class="container">
         <div class="row justify-content-center" data-aos="zoom-out">
           <div class="col-xl-7 col-lg-9 text-center">
+            {% if user.is_authenticated %}
+            <h2>Welcome, {{ user.username }}!</h2>
+            {% else %}
             <h1>One Page Bootstrap Website Template</h1>
+            {% endif %}
             <p>We are team of talented designers making websites with Bootstrap</p>
           </div>
         </div>
